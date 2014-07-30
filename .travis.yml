@@ -4,4 +4,5 @@ install:
   - sudo apt-get install mono-devel mono-gmcs nunit-console
  
 script:
+  - nuget restore Azimuth.sln
   - xbuild Azimuth.sln
